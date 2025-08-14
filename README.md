@@ -1,21 +1,24 @@
 # My WriteTech Accelerator Portfolio
-Hi there 👋 Welcome to my technical writing portfolio. This repository contains all my ongoing work projects and deliverables from the WriteTech Accelerator Programme.
-It includes writing materials on various domains such as API documentation, DevOps, Automation, AI, and Web3, using a variety of documentation workflows and tools.
+Welcome! This repository contains all my project work and deliverables from the **WriteTech Accelerator Program**.
+
+Over the course of the bootcamp, I completed technical writing projects across various domains — including API documentation, AI, DevOps, automation, and Web3 — using modern documentation workflows and tools.
+
 
 ## 👩‍💻 About Me
-I am a Software Engineer (Backend-Heavy) and DevOps Enthusiast with experience building applications using Node.js, Express.js, Java, and Spring/Spring Boot. I am also CKAD-certified. As a lifelong learner, I am eager to add technical writing to my skill set and begin creating user-friendly, well-detailed documentation for APIs, DevOps, and Cloud products.
+I am a Software Engineer (Backend-Heavy) and DevOps Enthusiast with experience building applications using Node.js, Express.js, Java, and Spring/Spring Boot. As a lifelong learner, I am eager to add technical writing to my skill set and begin creating user-friendly, well-detailed documentations. This portfolio highlights the practical skills I’ve built during the WriteTech Accelerator.
 
 
-## 📦 Project Modules
+## 📁 Project Modules
 
-| Module | Folder| Final Deliverables | Live Link |
-|----------|----------|----------|----------|
-| Documentation Tooling & Static Site Generators   | [documentation-tooling/](https://github.com/kengneruphine/writetech-accelerator-portfolio-GraceRuphine/tree/main/documentation-tooling)   | Docusaurus site with improved docs   | *To be Updated*   |
-| API Documentation & OpenAPI   | [api-documentation/](https://github.com/kengneruphine/writetech-accelerator-portfolio-GraceRuphine/tree/main/api-documentation-openapi)  | API docs with OpenAPI & examples   | *To be Updated*   |
-| Automation & Static Site Deployment | [automation-workflow/](https://github.com/kengneruphine/writetech-accelerator-portfolio-GraceRuphine/tree/main/automation-workflows)   | Automated linting & validation  | *To be Updated*   |
-| AI for Documentation   | [ai-for-documentation/](https://github.com/kengneruphine/writetech-accelerator-portfolio-GraceRuphine/tree/main/ai-for-docs)   | AI model card & enhanced docs   | *To be Updated*   |
-| DevOps & Cloud Documentation   |  [devops-cloud-documentation/](https://github.com/kengneruphine/writetech-accelerator-portfolio-GraceRuphine/tree/main/devops-and-cloud-docs)  | DevOps/cloud tool process documentation   | *To be Updated*    |
-| Web3 Documentation   | [web3-documentation/](https://github.com/kengneruphine/writetech-accelerator-portfolio-GraceRuphine/tree/main/web3-documentation)   | Web3 tool user guide or white paper draft   |  *To be Updated*   |
+| Module | Folder | Final Deliverables | Live Link |
+|--------|--------|---------------------|-----------|
+| Documentation Tooling & Static Site Generators | [`documentation-tooling/`](./docs/documentation-tooling) | How-to guide for setting up a docs-as-code workflow using Docusaurus | _[Add link]_ |
+| API Documentation & OpenAPI | [`api-documentation/`](./docs/api-documentation) | Improved documentation for selected endpoints from a real or public API | _[Add link]_ |
+| Automation & Static Site Deployment | [`docs-automation/`](./docs/docs-automation) | Automated checks (style, links, builds) using tools like Vale, Spectral, and GitHub Actions | _[Add link]_ |
+| AI for Documentation | [`ai-documentation/`](./docs/ai-documentation) | Comparison of AI tools or prompt-based documentation using your own examples | _[Add link]_ |
+| DevOps & Cloud Documentation | [`devops-cloud-documentation/`](./docs/devops-cloud-documentation) | Step-by-step guide for a DevOps/cloud tool or process (e.g., CI/CD, deployment) | _[Add link]_ |
+| Technical Writing in Web3 | [`web3-documentation/`](./docs/web3-documentation) | One of: user guide for a Web3 tool, white paper draft, or improved API doc for a Web3 platform | _[Add link]_ |
+
 
 ## 🔗 Additional Links
 [LinkedIn](https://www.linkedin.com/in/tcheukounang-grace-6a5169124/)
