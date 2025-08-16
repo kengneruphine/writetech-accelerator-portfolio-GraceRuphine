@@ -13,8 +13,8 @@ I am a Software Engineer (Backend-Heavy) and DevOps Enthusiast with experience b
 
 | Module | Folder| Final Deliverables | Live Link |
 |----------|----------|----------|----------|
-| Documentation Tooling & Static Site Generators   | [documentation-tooling/](https://github.com/kengneruphine/writetech-accelerator-portfolio-GraceRuphine/tree/main/documentation-tooling)   | Docusaurus site with improved docs   | *To be Updated*   |
-| API Documentation & OpenAPI   | [api-documentation/](https://github.com/kengneruphine/writetech-accelerator-portfolio-GraceRuphine/tree/main/api-documentation-openapi)  | API docs with OpenAPI & examples   | *To be Updated*   |
+| Documentation Tooling & Static Site Generators   | [documentation-tooling/](https://github.com/kengneruphine/writetech-accelerator-portfolio-GraceRuphine/tree/main/docs/documentation-tooling)   | Docusaurus site with improved docs   | *To be Updated*   |
+| API Documentation & OpenAPI   | [api-documentation/](https://github.com/kengneruphine/writetech-accelerator-portfolio-GraceRuphine/tree/main/docs/api-documentation)  | API docs with OpenAPI & examples   | *To be Updated*   |
 | Automation & Static Site Deployment | [automation-workflow/](https://github.com/kengneruphine/writetech-accelerator-portfolio-GraceRuphine/tree/main/automation-workflows)   | Automated linting & validation  | *To be Updated*   |
 | AI for Documentation   | [ai-for-documentation/](https://github.com/kengneruphine/writetech-accelerator-portfolio-GraceRuphine/tree/main/ai-for-docs)   | AI model card & enhanced docs   | *To be Updated*   |
 | DevOps & Cloud Documentation   |  [devops-cloud-documentation/](https://github.com/kengneruphine/writetech-accelerator-portfolio-GraceRuphine/tree/main/devops-and-cloud-docs)  | DevOps/cloud tool process documentation   | *To be Updated*    |
