@@ -1,5 +1,5 @@
 # My WriteTech Accelerator Portfolio
-Welcome! This repository contains all my project work and deliverables from the *WriteTech Accelerator Program*.
+Welcome!!!! This repository contains all my project work and deliverables from the *WriteTech Accelerator Program*.
 
 Over the course of the bootcamp, I completed technical writing projects across various domains — including API documentation, AI, DevOps, automation, and Web3 — using modern documentation workflows and tools.
 
