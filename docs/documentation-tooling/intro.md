@@ -18,6 +18,7 @@ Also, on the same page, the phrase:
               should be:
 
             "Open a new browser tab and navigate to http://localhost:8585"
+
  since we are referring to a URL.
 
 - Additionally, in the Loading a Sample section on the Getting Started page, there were word repetitions, such as:
@@ -42,4 +43,4 @@ I learned alot during this exercise:
 - On the *using-microcks-cli* page, I embedded links to the *connecting-to-microcks-api* and *getting-started* pages, which helped me understand cross-referencing between documentation pages for a smoother user experience.
 - I learned how to incorporate HTML elements within Markdown for more flexible formatting.
 - I tried using MarkdownLint in VS code for formatting my files for a consistent, clean and readable documentation.
-
+  

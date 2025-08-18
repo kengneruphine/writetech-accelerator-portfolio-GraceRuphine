@@ -20,7 +20,7 @@ Let’s jump in! 🏂
 
 ## 1. Check the security configuration
 
-Assuming you’re running your Microcks instance at <span style={{ color: 'pink' }}>https://microcks.example.com/api/keycloak/config</span> and are unsure of your security configuration, you can execute the following command in your terminal to retrieve it:
+Assuming you’re running your Microcks instance at <span style={{ color: 'pink' }}>[https://microcks.example.com/api/keycloak/config](https://microcks.example.com/api/keycloak/config)</span> and are unsure of your security configuration, you can execute the following command in your terminal to retrieve it:
 
 ```bash
 curl https://microcks.example.com/api/keycloak/config -k
