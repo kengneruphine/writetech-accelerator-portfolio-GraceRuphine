@@ -25,7 +25,8 @@ I am a Software Engineer (Backend-Heavy) and DevOps Enthusiast with experience b
 | DevOps & Cloud Documentation | Step-by-step guide for a DevOps/cloud tool or process (e.g., CI/CD, deployment) 
 | Technical Writing in Web3 | One of: user guide for a Web3 tool, white paper draft, or improved API doc for a Web3 platform 
 
-
+## 🔗 Live Site
+- [View Site](https://writetech-accelerator-portfolio-gra.vercel.app/)
 
 ## 🔗 Additional Links
 - [LinkedIn](https://www.linkedin.com/in/tcheukounang-grace-6a5169124/)
