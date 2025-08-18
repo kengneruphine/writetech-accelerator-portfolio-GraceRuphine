@@ -45,14 +45,21 @@ const sidebars = {
         'documentation-tooling/getting-started',
         {
           type:'category',
-          label: 'API Reference',
-          items:[
-            'documentation-tooling/reference/get-user',
+          label: 'How To Guides',
+          items: [
+            {
+            type: 'category',
+            label: 'Automation',
+            items: [ 
+              'documentation-tooling/how-to-guides/automation/connecting-to-microcks-api',
+              'documentation-tooling/how-to-guides/automation/using-microcks-cli',]
+            }
+            
+          ],
+            }
           ]
         }
       ],
-    },
-  ],
 
   apiSidebar: [
     {

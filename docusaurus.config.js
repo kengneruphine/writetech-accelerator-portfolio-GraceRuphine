@@ -117,11 +117,11 @@ const config = {
         style: 'dark',
         links: [
           {
-            title: 'Docs',
+            title: 'Personal',
             items: [
               {
-                label: 'Tutorial',
-                to: '/docs/intro',
+                label: 'LinkedIn',
+                href: 'https://www.linkedin.com/in/tcheukounang-grace-6a5169124/',
               },
             ],
           },
@@ -129,26 +129,15 @@ const config = {
             title: 'Community',
             items: [
               {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-              },
-              {
-                label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
-              },
-              {
                 label: 'X',
-                href: 'https://x.com/docusaurus',
+                href: 'https://x.com/ruphine_kengne',
               },
             ],
           },
           {
             title: 'More',
             items: [
-              {
-                label: 'Blog',
-                to: '/blog',
-              },
+              
               {
                 label: 'GitHub',
                 href: 'https://github.com/kengneruphine/writetech-accelerator-portfolio-GraceRuphine',
