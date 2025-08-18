@@ -23,7 +23,7 @@ const sidebars = {
   profileSidebar: [
     {
       type: 'doc',
-      label: 'Overview',
+      label: 'About Me',
       id: 'intro',
     }
   ],
@@ -36,7 +36,11 @@ const sidebars = {
     },
     {
       type: 'category',
-      label: 'Project-selected',
+      label: 'Microcks',
+       link: {
+        type: 'doc',
+        id: 'documentation-tooling/microcks-overview'
+      },
       items: [
         'documentation-tooling/getting-started',
         {

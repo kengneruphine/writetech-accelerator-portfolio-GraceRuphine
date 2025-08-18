@@ -15,10 +15,13 @@ I am a Software Engineer (Backend-Heavy) and DevOps Enthusiast with experience b
 |----------|----------|----------|----------|
 | Documentation Tooling & Static Site Generators   | [documentation-tooling/](https://github.com/kengneruphine/writetech-accelerator-portfolio-GraceRuphine/tree/main/docs/documentation-tooling)   | Docusaurus site with improved docs   | *To be Updated*   |
 | API Documentation & OpenAPI   | [api-documentation/](https://github.com/kengneruphine/writetech-accelerator-portfolio-GraceRuphine/tree/main/docs/api-documentation)  | API docs with OpenAPI & examples   | *To be Updated*   |
-| Automation & Static Site Deployment | [automation-workflow/](https://github.com/kengneruphine/writetech-accelerator-portfolio-GraceRuphine/tree/main/automation-workflows)   | Automated linting & validation  | *To be Updated*   |
-| AI for Documentation   | [ai-for-documentation/](https://github.com/kengneruphine/writetech-accelerator-portfolio-GraceRuphine/tree/main/ai-for-docs)   | AI model card & enhanced docs   | *To be Updated*   |
-| DevOps & Cloud Documentation   |  [devops-cloud-documentation/](https://github.com/kengneruphine/writetech-accelerator-portfolio-GraceRuphine/tree/main/devops-and-cloud-docs)  | DevOps/cloud tool process documentation   | *To be Updated*    |
-| Web3 Documentation   | [web3-documentation/](https://github.com/kengneruphine/writetech-accelerator-portfolio-GraceRuphine/tree/main/web3-documentation)   | Web3 tool user guide or white paper draft   |  *To be Updated*   | 
+| Automation & Static Site Deployment | [automation-workflow/](https://github.com/kengneruphine/writetech-accelerator-portfolio-GraceRuphine/tree/main/docs/automation-workflows)   | Automated linting & validation  | *To be Updated*   |
+| AI for Documentation   | [ai-for-documentation/](https://github.com/kengneruphine/writetech-accelerator-portfolio-GraceRuphine/tree/main/docs/ai-for-docs)   | AI model card & enhanced docs   | *To be Updated*   |
+| DevOps & Cloud Documentation   |  [devops-cloud-documentation/](https://github.com/kengneruphine/writetech-accelerator-portfolio-GraceRuphine/tree/main/docs/devops-and-cloud-docs)  | DevOps/cloud tool process documentation   | *To be Updated*    |
+| Web3 Documentation   | [web3-documentation/](https://github.com/kengneruphine/writetech-accelerator-portfolio-GraceRuphine/tree/main/docs/web3-documentation)   | Web3 tool user guide or white paper draft   |  *To be Updated*   | 
+
+## 🔗 Live Site
+- [View Site](https://writetech-accelerator-portfolio-gra.vercel.app/)
 
 ## 🔗 Additional Links
 [LinkedIn](https://www.linkedin.com/in/tcheukounang-grace-6a5169124/)

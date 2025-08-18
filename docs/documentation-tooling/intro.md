@@ -2,8 +2,8 @@
 
 This project involved auditing and restructuring documentation for [Platform Name] using Docusaurus.
 
-## Live Site
-[View Site](#)
+## 🔗 Live Site
+- [View Site](https://writetech-accelerator-portfolio-gra.vercel.app/)
 
 ## What I Improved
 - [Example improvement 1]
