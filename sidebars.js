@@ -23,13 +23,22 @@ const sidebars = {
   profileSidebar: [
     {
       type: 'doc',
-      label: 'About Me',
-      id: 'intro',
+      label: 'Profile',
+      id: 'about-me',
     }
   ],
   
   toolingSidebar: [
     {
+      type: 'doc',
+      label: 'Overview',
+      id: 'intro',
+    },
+    {
+      type: 'category',
+      label: 'Documentation Tooling',
+      items:[
+        {
       type: 'doc',
       label: 'Introduction',
       id: 'documentation-tooling/intro',
@@ -59,16 +68,36 @@ const sidebars = {
             }
           ]
         }
-      ],
 
-  apiSidebar: [
+      ]
+    },
+
     {
       type: 'category',
-      label: 'API',
-      items: ['api-documentation/intro'],
-    },
+      label: 'API Documentation',
+      items:[
+        {
+      type: 'doc',
+      label: 'Introduction',
+      id: 'api-documentation/intro',
+       },
+       {
+        type: 'doc',
+        label: 'Getting Started',
+        id: 'api-documentation/getting-started',
+       },
+       {
+       type: 'category',
+        label: 'Reference',
+        items: [
+          'api-documentation/reference/get-wallets',
+        ],
+     
+       }
+       
+      ]
+    }
   ],
-   
 };
 
 export default sidebars;

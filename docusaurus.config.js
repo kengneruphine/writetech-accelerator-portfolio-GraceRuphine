@@ -4,154 +4,152 @@
 // There are various equivalent ways to declare your Docusaurus config.
 // See: https://docusaurus.io/docs/api/docusaurus-config
 
-import {themes as prismThemes} from 'prism-react-renderer';
+import { themes as prismThemes } from "prism-react-renderer";
 
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Grace’s Technical Writing Portfolio',
-  tagline: 'My portfolio for the WriteTech Accelerator Program, showcasing projects from each module and final deliverables.',
-  favicon: 'img/favicon.ico',
+  title: "Grace’s Technical Writing Portfolio",
+  tagline:
+    "My portfolio for the WriteTech Accelerator Program, showcasing projects from each module and final deliverables.",
+  favicon: "img/favicon.ico",
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
   future: {
-    v4: true, // Improve compatibility with the upcoming Docusaurus v4
+    v4: true // Improve compatibility with the upcoming Docusaurus v4
   },
 
   // Set the production url of your site here
-  url: 'https://writetech-accelerator-portfolio-gra.vercel.app/',
+  url: "https://writetech-accelerator-portfolio-gra.vercel.app/",
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/',
+  baseUrl: "/",
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  organizationName: "facebook", // Usually your GitHub org/user name.
+  projectName: "docusaurus", // Usually your repo name.
 
-  onBrokenLinks: 'throw',
-  onBrokenMarkdownLinks: 'warn',
+  onBrokenLinks: "throw",
+  onBrokenMarkdownLinks: "warn",
 
   // Even if you don't use internationalization, you can use this field to set
   // useful metadata like html lang. For example, if your site is Chinese, you
   // may want to replace "en" with "zh-Hans".
   i18n: {
-    defaultLocale: 'en',
-    locales: ['en'],
+    defaultLocale: "en",
+    locales: ["en"]
   },
 
   presets: [
     [
-      'classic',
+      "classic",
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
-          sidebarPath: './sidebars.js',
+          sidebarPath: "./sidebars.js",
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/kengneruphine/writetech-accelerator-portfolio-GraceRuphine',
+            "https://github.com/kengneruphine/writetech-accelerator-portfolio-GraceRuphine"
         },
         blog: {
           showReadingTime: true,
           feedOptions: {
-            type: ['rss', 'atom'],
-            xslt: true,
+            type: ["rss", "atom"],
+            xslt: true
           },
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/kengneruphine/writetech-accelerator-portfolio-GraceRuphine',
+            "https://github.com/kengneruphine/writetech-accelerator-portfolio-GraceRuphine",
           // Useful options to enforce blogging best practices
-          onInlineTags: 'warn',
-          onInlineAuthors: 'warn',
-          onUntruncatedBlogPosts: 'warn',
+          onInlineTags: "warn",
+          onInlineAuthors: "warn",
+          onUntruncatedBlogPosts: "warn"
         },
         theme: {
-          customCss: './src/css/custom.css',
-        },
-      }),
-    ],
+          customCss: "./src/css/custom.css"
+        }
+      })
+    ]
   ],
 
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       // Replace with your project's social card
-      image: 'img/docusaurus-social-card.jpg',
+      image: "img/docusaurus-social-card.jpg",
       navbar: {
-        title: 'Gracy',
+        title: "Gracy'Doc",
         logo: {
-          alt: 'My Site Logo',
-          src: 'img/logo.svg',
+          alt: "My Site Logo",
+          src: "img/logo.svg"
         },
         items: [
           {
-            type: 'docSidebar',
-            sidebarId: 'profileSidebar',
-            position: 'left',
-            label: 'About Me',
+            type: "docSidebar",
+            sidebarId: "profileSidebar",
+            position: "left",
+            label: "About Me"
           },
           {
-            type: 'docSidebar',
-            sidebarId: 'toolingSidebar',
-            position: 'left',
-            label: 'Docs Tooling',
+            type: "docSidebar",
+            sidebarId: "toolingSidebar",
+            position: "left",
+            label: "WriteTech Portfolio"
           },
+          { to: "/blog", label: "Blog", position: "left" },
           {
-            type: 'docSidebar',
-            sidebarId: 'apiSidebar',
-            position: 'left',
-            label: 'API Documentation',
-          },
-          {to: '/blog', label: 'Blog', position: 'left'},
-          {
-            href: 'https://github.com/kengneruphine/writetech-accelerator-portfolio-GraceRuphine',
-            label: 'GitHub',
-            position: 'right',
-          },
-        ],
+            href: "https://github.com/kengneruphine/writetech-accelerator-portfolio-GraceRuphine",
+            label: "GitHub",
+            position: "right"
+          }
+        ]
       },
       footer: {
-        style: 'dark',
+        style: "dark",
         links: [
           {
-            title: 'Personal',
+            title: "Personal",
             items: [
               {
-                label: 'LinkedIn',
-                href: 'https://www.linkedin.com/in/tcheukounang-grace-6a5169124/',
+                label: "About Me",
+                to: "/docs/about-me",
               },
-            ],
+              {
+                label: "LinkedIn",
+                href: "https://www.linkedin.com/in/tcheukounang-grace-6a5169124/"
+              }
+            ]
           },
           {
-            title: 'Community',
+            title: "Community",
             items: [
               {
-                label: 'X',
-                href: 'https://x.com/ruphine_kengne',
-              },
-            ],
+                label: "X",
+                href: "https://x.com/ruphine_kengne"
+              }
+            ]
           },
           {
-            title: 'More',
+            title: "More",
             items: [
-              
               {
-                label: 'GitHub',
-                href: 'https://github.com/kengneruphine/writetech-accelerator-portfolio-GraceRuphine',
-              },
-            ],
-          },
+                label: "GitHub",
+                href: "https://github.com/kengneruphine/writetech-accelerator-portfolio-GraceRuphine"
+              }
+            ]
+          }
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} Built by Grace Ruphine - WriteTech Accelerator Program 2025`,
+        copyright: `Copyright © ${new Date().getFullYear()} Built by Grace Ruphine - WriteTech Accelerator Program 2025`
       },
       prism: {
         theme: prismThemes.github,
-        darkTheme: prismThemes.dracula,
-      },
-    }),
+        darkTheme: prismThemes.dracula
+      }
+    })
 };
 
 export default config;

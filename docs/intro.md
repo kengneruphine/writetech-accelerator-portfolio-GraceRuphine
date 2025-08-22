@@ -5,11 +5,11 @@ title: My WriteTech Accelerator Portfolio
 
 Welcome!👋 This repository contains all my project work and deliverables from the **WriteTech Accelerator Program**.
 
-Over the course of the bootcamp, I completed technical writing projects across various domains — including API documentation, AI, DevOps, automation, and Web3 — using modern documentation workflows and tools.
+Over the course of the bootcamp, I completed technical writing projects across various domains — including API documentation, AI, DevOps, automation, and Web3 — using modern documentation workflows and tools. This portfolio highlights the practical skills I’ve built during the WriteTech Accelerator.
 
 ## 👩‍💻 About Me
 
-I am a Software Engineer (Backend-Heavy) and DevOps Enthusiast with experience building applications using Node.js, Express.js, Java, and Spring/Spring Boot. As a lifelong learner, I am eager to add technical writing to my skill set and begin creating user-friendly, well-detailed documentations. This portfolio highlights the practical skills I’ve built during the WriteTech Accelerator.
+You can learn more about my journey, background, and broader work here: 👉 [About Me](/docs/about-me.md)
 
 ## 📁 Project Modules
 
