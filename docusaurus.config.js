@@ -5,6 +5,8 @@
 // See: https://docusaurus.io/docs/api/docusaurus-config
 
 import { themes as prismThemes } from "prism-react-renderer";
+//import * as Plugin from "@docusaurus/types/src/plugin";
+import * as OpenApiPlugin from "docusaurus-plugin-openapi-docs";
 
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
@@ -49,6 +51,7 @@ const config = {
       ({
         docs: {
           sidebarPath: "./sidebars.js",
+          docItemComponent: "@theme/ApiItem",
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
@@ -75,7 +78,26 @@ const config = {
       })
     ]
   ],
+plugins: [
+    [
+      'docusaurus-plugin-openapi-docs',
+      {
+        id: "api", // plugin id
+        docsPluginId: "classic", // configured for preset-classic
+        config: {
+          chimoney: {
+            specPath: "docs/api-documentation/openapi/chimoney.yaml", //path to your OpenAPI spec file
+            outputDir: "docs/api-documentation/reference", // where generated docs will go
+            sidebarOptions: {
+              groupPathsBy: "tag",
+            },
+          },
+        }
+      },
+    ]
+  ],
 
+  themes: ["docusaurus-theme-openapi-docs"], // export theme components
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({

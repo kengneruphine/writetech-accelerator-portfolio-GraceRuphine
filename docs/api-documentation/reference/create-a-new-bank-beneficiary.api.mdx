@@ -1,0 +1,71 @@
+---
+id: create-a-new-bank-beneficiary
+title: "Create a new bank beneficiary"
+description: "Add a new bank beneficiary to the system"
+sidebar_label: "Create a new bank beneficiary"
+hide_title: true
+hide_table_of_contents: true
+api: eJzNV21v4jgQ/ivWfM620G337vhG2+iOu5ayQFutqqoy8QDeJnbWdugixH8/jRNIUiBtpdPd5QuJ8eN5n3m8AoE2MjJ1UivoQFcIxpnCFzbh6plNUOFURpKbJXOauTkyu7QOEwjA4I8MrTvXYgmdlf+UBgV0nMkwgEgrh8rRXzxNYxlxEnH83ZKcFdhojgmnN7dMETqgJ98xchBAanSKxkm09G9Fg0vu9gJKyQ/Ao0hnyv2hY4GmzxOEoL7WFcKgte3X6xfSLSEAsrqA0WtltQBeSYUVcD9LJmhICZ05qWYXWhA2yoxBFRHWbzNLeHxt2a6qpW3WGalmEAD+5Eka09Kfeq7YpUZYH7KoEd4++cyuuVRs5A6dcNJ8Qjd17PR8B+xd1Ajs4wv7ps3zDnSIM5lnQwM4vGffboZ/7YAH2joeN4LbrVarva4EtVHSGK1j51x5PbfBf7dlOznSiDw9++JlFeEg8Ee9QZgPOKGesI2Ik8+nZ19++XVdz+r3QH5bBxDF3Fo5LQp+L0xlCRVrTwm5kCLjMQRwnlmp0FoqlNLgypY1FRBO0RgU1+jmWuw7u97OBhsAS/lSZ44lObAq4p5O3hZso/tvR5d+c1HSb+yFdfFQi7KpVjYv/JNWi37qmtosisj6f6xxWsddZpt13AhdB5CgtXz2RomcV8ZBZJA7FKw4Y5rF8ZIOEge6dF07uTd4tXZ1euazHFXv8g2twn643e8wSWPusPeGgHF4PbjqjjfAbaRO9wXnjsdS+DAwNEYbJpWfhcUIPPp3o+ZV8Lb6LU1bK4qHG1T0VjFDr3/XvepdPg3Dr7fhaPzu9BiXLmEpNzxBh8YybpBJtSBVoHRze9fNXZ9JOdGQlhm0OjMRMmmZ0o7xBZcxn8TIptqwTPHMzVE5cjUKllk09r+KRP7SPD4HPfaMy40xAqdSoThiv6NCwx0WtEsrZFOjE59fAhcYk1Is1YYaPbnOSZePkFb7UxFU79KzfZlL/ZP8YxlXTCqHRvGYWTQLNHku/3+Tt6rlexN3HA773aunUTi8C4dP4XB4M3x3+nYPeIjpyI8HcVTz/1mrVfG/F5IPJUi19c7hbg4dOK5Q2GMa2hAAeXZY8udwo8NevruHKJZs8CAZrDG+g4Rvw+r2krqS3xwgbiUfOUDOPPmoErAKy6qSrKqkXSJVY0t1slTVoEqICsGvSM+GprwiNlv2skte6hxlh3/AfZXs5wShwg9yEhCAVFPtc69InYu5TLTCJesOejucZUy9T/qCpZ4hdJQlqFzexanzlSki0TJUItVSOcv0lFUPZlMdx/pFqpnvJTcpKlodpRhtDSS+sUBjc8nto9ZRy/MsbV3Cfe2rPGwXftofuBq+NmFVNpSPXCiLynT40x2nMZeKVMmMp7d5LT1AXaqvpscA5lRwnQdYrSbc4q2J12ta/pEhReHhMYAFN5JGB32tA5gjF5QQDyt4RgrURa7wpzHpQNvjjHTZ6YbrYIOgYZW6xr2PlZ4wuBmNSePitpz4xAPDX+juyF+gAxCATvOg0HWa1lYQczXLfOeC/Ex6/gZQ61nl
+sidebar_class_name: "post api-method"
+info_path: docs/api-documentation/reference/chimoney-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Create a new bank beneficiary"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/beneficiary/bank"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Add a new bank beneficiary to the system
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"required":true,"content":{"application/json":{"schema":{"type":"object","properties":{"beneficiaryData":{"type":"object","required":["accountHolderName","accountHolderAddress1","accountHolderCity","bankName","bankCity","bankAddressLine1","accountNumber","routingCode","currency","country"],"properties":{"accountHolderName":{"type":"string","example":"John Doe"},"accountHolderAddress1":{"type":"string","example":"123 Main St"},"accountHolderAddress2":{"type":"string","example":"Apt 4B"},"accountHolderCity":{"type":"string","example":"New York"},"accountHolderRegion":{"type":"string","example":"NEW YORK"},"accountHolderPostal":{"type":"string","example":10001},"bankName":{"type":"string","example":"Test Bank"},"bankCity":{"type":"string","example":"New York"},"bankAddressLine1":{"type":"string","example":"456 Bank St"},"bankRegion":{"type":"string","example":"NEW YORK"},"bankPostal":{"type":"string","example":10001},"accountNumber":{"type":"string","example":12345678},"routingCode":{"type":"string","example":123456789},"classification":{"type":"string","enum":["Individual","Business"],"example":"Individual"},"preferredMethod":{"type":"string","description":"Preferred payout method","example":"W"},"currency":{"type":"string","example":"USD"},"country":{"type":"string","example":"US"}}}}}}}}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"success","content":{"application/json":{"schema":{"type":"object","properties":{"status":{"type":"string","example":"success"},"message":{"type":"string","example":"Beneficiary created successfully"},"data":{"type":"object","properties":{"id":{"type":"string","example":"12345"},"benID":{"type":"string","example":"BENE12345"},"templateId":{"type":"string","example":"TEMPLATE12345"}}}}}}}},"400":{"description":"Validation error in the request.","content":{"application/json":{"schema":{"type":"object","properties":{"status":{"type":"string","example":"error"},"type":{"type":"string","example":"Validation Error"},"code":{"type":"string","example":"INVALID_REQUEST"},"message":{"type":"string","example":"The request parameters are invalid"}}}}}},"401":{"description":"Access to this resource is not available for unauthenticated users.","content":{"application/json":{"schema":{"type":"object","properties":{"status":{"type":"string","example":"error"},"error":{"type":"string","example":"API key is not defined. Generate a new one from the developer portal"}},"title":"401-Error"}}}},"500":{"description":"Indicates an internal server error.","content":{"application/json":{"schema":{"type":"object","properties":{"status":{"type":"string","example":"error"},"type":{"type":"string","example":"server error"},"code":{"type":"string","example":"INTERNAL_SERVER_ERROR"},"message":{"type":"string","example":"An internal server error occurred."}},"title":"500-Error"}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

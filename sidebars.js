@@ -90,7 +90,7 @@ const sidebars = {
        type: 'category',
         label: 'Reference',
         items: [
-          'api-documentation/reference/get-wallets',
+          require('./docs/api-documentation/reference/sidebar.ts')
         ],
      
        }
