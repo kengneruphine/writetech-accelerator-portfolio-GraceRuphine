@@ -36,7 +36,7 @@ The Chimoney API can be used for Business and developer for testing purpose, and
    - Pick an API plan and pay the **[subscription fee](https://chimoney.io/pricing/)**
 
 2. **For Developers Tesing the API**
-    
+
     You need to set up your Sandbox Environment
 
    - Sign up for your sandbox environment **[here](https://sandbox.chimoney.io/auth/signin?next=/)**
@@ -47,20 +47,19 @@ The Chimoney API can be used for Business and developer for testing purpose, and
 
 <img src="/img/chimoney/chimoney-1.png" alt="sandbox" />
 
-
 ### Required Headers for a Request
 
 To make an API request, you need to set the following headers:
 
 | Header Name | Name | Purpose |
 |----------|----------|----------|
-| ```json Content-Type ```   | ```json application/json ```   | Specifies the format for the request   |
-| ```json X-API-KEY ```    | ```json your_api_key```   | API key to make request   |
-
+| ```json Content-Type```   | ```json application/json```   | Specifies the format for the request   |
+| ```json X-API-KEY```    | ```json your_api_key```   | API key to make request   |
 
 ## Testing API
 
 To test the API endpoints directly on the docs, follow these steps:
+
 - Copy your **API-Key** from the Developers tab and paste it on the **Authorization Header**
   
   <img src="/img/chimoney/chimoney-2.png" alt="test" />

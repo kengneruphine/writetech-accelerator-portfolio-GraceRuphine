@@ -4,7 +4,7 @@ This project documents [Chimoney](chimoney.io) Public REST API, including a Gett
 
 In this project, I documented the beneficiaries endpoints following the OpenAPI specification.
 
-## Live Site 
+## Live Site
 
 [View Site](https://writetech-accelerator-portfolio-gra.vercel.app/)
 
