@@ -4,7 +4,7 @@ This project documents [Chimoney](chimoney.io) Public REST API, including a Gett
 
 In this project, I documented the beneficiaries endpoints following the OpenAPI specification.
 
-[This Plugin](https://github.com/PaloAltoNetworks/docusaurus-openapi-docs) was used to render OpenAPI in Docusaurus.
+[This Plugin](https://github.com/PaloAltoNetworks/docusaurus-openapi-docs) was used to render OpenAPI specs files in Docusaurus.
 
 ## Challenges
 
