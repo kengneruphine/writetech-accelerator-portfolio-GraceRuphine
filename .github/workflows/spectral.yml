@@ -1,0 +1,59 @@
+name: Lint Open API with spectral and Publishing the API Reference to github pages
+
+on: [push]
+
+jobs:
+  Openapi-linting:
+    name: Run Spectral
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      checks: write
+      pull-requests: write
+    steps:
+      # Check out the repository
+      - uses: actions/checkout@v3
+
+      # Run Spectral
+      - uses: stoplightio/spectral-action@latest
+        with:
+          file_glob: 'docs/docs-automation/*.yaml'
+
+  generate-site:
+    name: Generate API Reference and Publish to GitHub Pages
+    runs-on: ubuntu-latest
+    needs: Openapi-linting
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with: { node-version: 18 }
+
+      - name: Redocly CLI Command
+        run: npx @redocly/cli build-docs 'docs/docs-automation/openapi.yaml' -o 'docs/docs-automation/api-reference/index.html'
+      
+      - name: Upload Github Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./docs/docs-automation/api-reference
+          name: github-pages  # the name of the artifact, can be used to identify the artifact in the deploy step
+
+  deploy-to-github-pages:
+    needs: generate-site
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write # to authenticate with GitHub Pages
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }} # After deploy, the site URL is automatically
+                                                   # set to the output of the deploy step (something like https://username.github.io/repo-name).
+
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4 
+
+      

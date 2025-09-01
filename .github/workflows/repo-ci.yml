@@ -1,0 +1,17 @@
+name: Github Actions Practices
+
+on: 
+  [push]
+
+jobs:
+  Test-Github-actions:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print my Github Name and Repo details
+        run: |
+          echo "My Github Name is: ${{ github.actor }}"
+          echo "My Repository Name is: ${{ github.repository }}"
+          echo "My Repository Owner is: ${{ github.repository_owner }}"
+      - name: Vale Installation
+        run: echo "Vale was installed on my machine!"
+         

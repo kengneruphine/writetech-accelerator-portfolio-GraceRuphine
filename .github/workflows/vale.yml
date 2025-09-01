@@ -1,0 +1,23 @@
+name: Integrating Vale in Github Actions
+on: [push]
+
+jobs:
+  Test-vale-check:
+    name: Vale linting
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+      - name: Run vale
+        uses: errata-ai/vale-action@v2.1.1
+  
+  Check-broken-link:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Check for broken links
+        uses: tcort/github-action-markdown-link-check@v1
+        with:
+          folder-path: 'docs/docs-automation' # Path to the folder containing the markdown files to check for broken links
