@@ -20,7 +20,7 @@ tags:
 paths:
   /beneficiary:
     get:
-      # summary: Get all beneficiaries for an account
+      summary: Get all beneficiaries for an account
       description: Retrieve a list of all beneficiaries optionally filtered by subaccount ID.
       operationId: getBeneficiaries
       tags:
@@ -87,7 +87,7 @@ paths:
 
   /beneficiary/bank:
     post:
-      #summary: Create a new bank beneficiary
+      summary: Create a new bank beneficiary
       description: Add a new bank beneficiary to the system 
       operationId: createBankBeneficiary
       tags:
