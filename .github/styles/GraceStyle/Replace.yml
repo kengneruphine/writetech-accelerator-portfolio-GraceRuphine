@@ -1,0 +1,14 @@
+extends: substitution
+message: Consider '%s' instead of '%s'
+level: warning
+ignorecase: true
+
+swap:
+  # You can suggest multiple alternatives for a single token
+  # by separating them with a pipe ("|").
+  masterful: skilled|expert|proficient
+  google: Google
+  vale: Vale
+  github: GitHub
+  github actions: GitHub Actions
+  writetech: WriteTech
