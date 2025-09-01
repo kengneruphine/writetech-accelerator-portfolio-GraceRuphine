@@ -1,0 +1,254 @@
+openapi: 3.1.0
+info:
+  title: Chimoney API
+  description: This is an API documentation for beneficiaries endpoints of Chimoney API following the OpenAPI Specifications
+  version: 1.0.0
+  contact:
+    name: Chimoney Support
+    url: https://chimoney.com
+    email: support@chimoney.com
+servers:
+  - url: https://api.chimoney.io
+    description: Production server
+  - url: https://api-v2-sandbox.chimoney.io
+    description: Sandbox server
+
+tags:
+  - name: Beneficiaries
+    description: Operations related to managing beneficiaries
+
+paths:
+  /beneficiary:
+    get:
+      # summary: Get all beneficiaries for an account
+      description: Retrieve a list of all beneficiaries optionally filtered by subaccount ID.
+      operationId: getBeneficiaries
+      tags:
+        - Beneficiaries
+      parameters:
+        - name: subaccountId
+          in: query
+          description: Optional subaccount ID
+          required: false
+          schema:
+            type: string
+      responses:
+        "200":
+          description: Request successful
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: string
+                    example: success
+                  message:
+                    type: string
+                    example: Beneficiaries retrieved successfully
+                  data:
+                    type: array
+                    items:
+                      type: object
+                      properties:
+                        id:
+                          type: string
+                          example: "12345"
+                        accountNumber:
+                          type: string
+                          example: "00123456789"
+                        bankCurrency:
+                          type: object
+                          properties:
+                            curr:
+                              type: string
+                              example: NGN
+                        channel:
+                          type: string
+                          example: "bank-transfer"
+                        createdDate:
+                          type: string
+                          format: date-time
+                          example: "2023-10-01T12:34:56Z"
+        "401":
+          description: Access to this resource is not available for unauthenticated users.
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/401-Error"
+      
+        "500":
+          description: Indicates an internal server error.
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/500-Error"
+
+
+  /beneficiary/bank:
+    post:
+      #summary: Create a new bank beneficiary
+      description: Add a new bank beneficiary to the system 
+      operationId: createBankBeneficiary
+      tags:
+        - Beneficiaries
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                beneficiaryData:
+                  type: object
+                  required:
+                    - accountHolderName
+                    - accountHolderAddress1
+                    - accountHolderCity
+                    - bankName
+                    - bankCity
+                    - bankAddressLine1
+                    - accountNumber
+                    - routingCode
+                    - currency
+                    - country
+                  properties:
+                    accountHolderName:
+                      type: string
+                      example: John Doe
+                    accountHolderAddress1:
+                      type: string
+                      example: 123 Main St
+                    accountHolderAddress2:
+                      type: string
+                      example: "Apt 4B"
+                    accountHolderCity:
+                      type: string
+                      example: New York
+                    accountHolderRegion:
+                      type: string
+                      example: NEW YORK
+                    accountHolderPostal:
+                      type: string
+                      example: "10001"
+                    bankName:
+                      type: string
+                      example: "Test Bank"
+                    bankCity:
+                      type: string
+                      example: "New York"
+                    bankAddressLine1:
+                      type: string
+                      example: "456 Bank St"
+                    bankRegion:
+                      type: string
+                      example: "NEW YORK"
+                    bankPostal:
+                      type: string
+                      example: "10001"
+                    accountNumber:
+                      type: string
+                      example: "12345678"
+                    routingCode:
+                      type: string
+                      example: "123456789"
+                    classification:
+                      type: string
+                      enum: [Individual, Business]
+                      example: "Individual"
+                    preferredMethod:
+                      type: string
+                      description: Preferred payout method
+                      example: W
+                    currency:
+                      type: string
+                      example: USD
+                    country:
+                      type: string
+                      example: US
+      responses:
+        "200":
+          description: success
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: string
+                    example: success
+                  message:
+                    type: string
+                    example: Beneficiary created successfully
+                  data:
+                    type: object
+                    properties:
+                      id:
+                        type: string
+                        example: "12345"
+                      benID:
+                        type: string
+                        example: "BENE12345"
+                      templateId:
+                        type: string
+                        example: TEMPLATE12345
+        "400":
+          description: Validation error in the request.
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: string
+                    example: error
+                  type:
+                    type: string
+                    example: Validation Error
+                  code:
+                    type: string
+                    example: INVALID_REQUEST
+                  message:
+                    type: string
+                    example: The request parameters are invalid 
+        "401":
+          description: Access to this resource is not available for unauthenticated users.
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/401-Error"
+                
+        "500":
+          description: Indicates an internal server error.
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/500-Error"                                    
+
+
+components:
+  schemas:
+    401-Error:
+      type: object
+      properties:
+        status:
+          type: string
+          example: error
+        error:
+          type: string
+          example: API key is not defined. Generate a new one from the developer portal
+    500-Error:
+      type: object
+      properties:
+        status:
+          type: string
+          example: error
+        type:
+          type: string
+          example: server error
+        code:
+          type: string
+          example: INTERNAL_SERVER_ERROR
+        message:
+          type: string
+          example: An internal server error occurred.

@@ -1,0 +1,44 @@
+[
+	{
+		"code": "endpoint-should-have-summary",
+		"path": [
+			"paths",
+			"/beneficiary",
+			"get"
+		],
+		"message": "#/paths/~1beneficiary/get should have a `summary`.",
+		"severity": 0,
+		"range": {
+			"start": {
+				"line": 21,
+				"character": 8
+			},
+			"end": {
+				"line": 84,
+				"character": 54
+			}
+		},
+		"source": "c:/Users/Grace Ruphine/Documents/WriteTech-Accelerator-Programme/writetech-accelerator-portfolio-GraceRuphine/docs/docs-automation/openapi.yaml"
+	},
+	{
+		"code": "endpoint-should-have-summary",
+		"path": [
+			"paths",
+			"/beneficiary/bank",
+			"post"
+		],
+		"message": "#/paths/~1beneficiary~1bank/post should have a `summary`.",
+		"severity": 0,
+		"range": {
+			"start": {
+				"line": 88,
+				"character": 9
+			},
+			"end": {
+				"line": 225,
+				"character": 54
+			}
+		},
+		"source": "c:/Users/Grace Ruphine/Documents/WriteTech-Accelerator-Programme/writetech-accelerator-portfolio-GraceRuphine/docs/docs-automation/openapi.yaml"
+	}
+]

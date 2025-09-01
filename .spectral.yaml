@@ -1,0 +1,12 @@
+extends: ["spectral:oas", "spectral:asyncapi", "spectral:arazzo"]
+
+rules:
+  endpoint-should-have-summary:
+    description: Each endpoint should have a summary.
+    message: "{{path}} should have a `summary`."
+    given: $.paths[*][*]
+    severity: "error"
+    then:
+      field: summary
+      function: truthy
+
