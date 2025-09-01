@@ -32,7 +32,7 @@ jobs:
         with: { node-version: 18 }
 
       - name: Redocly CLI Command
-        run: npx @redocly/cli build-docs 'docs/docs-automation/openapi.yaml' -o 'docs/docs-automation/reference.html'
+        run: npx @redocly/cli build-docs 'docs/docs-automation/openapi.yaml' -o 'docs/docs-automation/api-reference'
       
       - name: Upload Github Pages artifact
         uses: actions/upload-pages-artifact@v3
