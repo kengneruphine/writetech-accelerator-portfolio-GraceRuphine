@@ -96,6 +96,17 @@ const sidebars = {
        }
        
       ]
+    },
+    {
+      type: 'category',
+      label: 'Docs Automation',
+      items:[
+        {
+      type: 'doc',
+      label: 'Overview',
+      id: 'docs-automation/intro',
+       },
+      ]
     }
   ],
 };
