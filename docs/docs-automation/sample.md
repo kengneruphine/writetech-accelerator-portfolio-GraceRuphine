@@ -7,7 +7,7 @@ I joined the wrietech accelerator program to learn how to write so that I become
 In this assesment, we are using vale to automatically lint our files, github to store our work and github actions to automate our processes.
 
 Testing if broken links are present
-- Project Overview: [Overview](./not-found)
+<!-- - Project Overview: [Overview](./not-found)
 - Example Use Case: [Example](https://example.com)
 - Typo link: [Typo](http://type-url)
-- Nonfound server: [Achive](https://olc)
+- Nonfound server: [Achive](https://olc) -->
