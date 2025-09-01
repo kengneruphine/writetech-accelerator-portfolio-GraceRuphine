@@ -38,7 +38,7 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
           path: ./docs/docs-automation/api-reference
-          name: api-reference  # the name of the artifact, can be used to identify the artifact in the deploy step
+          name: github-pages  # the name of the artifact, can be used to identify the artifact in the deploy step
 
   deploy-to-github-pages:
     needs: generate-site
@@ -47,7 +47,7 @@ jobs:
       pages: write
       id-token: write # to authenticate with GitHub Pages
     environment:
-      name: api-reference
+      name: github-pages
       url: ${{ steps.deployment.outputs.page_url }} # After deploy, the site URL is automatically
                                                    # set to the output of the deploy step (something like https://username.github.io/repo-name).
 
