@@ -1,0 +1,14 @@
+version: "3.9"
+services:
+  frontend:  #changed the name from web-app to frontend
+    image: myapp:latest
+    environment:
+      DB_PASSWORD: ${secret}
+    ports:
+      - "8080:80"
+  backend:
+    build: .
+    ports:
+      - "5000:5000"
+
+
