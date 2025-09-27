@@ -1,0 +1,12 @@
+name: Devops_Pipeline
+version: 1.0.0
+steps:
+  - name: build the app
+    image: node:18
+    script:
+      - npm install
+      - npm run build 
+  - name: deploy to the server
+    script:
+      - scp ./dist user@server:/var/www
+      - ssh user@server "restart-service"
