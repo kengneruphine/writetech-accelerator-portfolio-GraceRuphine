@@ -107,6 +107,48 @@ const sidebars = {
       id: 'docs-automation/intro',
        },
       ]
+    },
+    {
+      
+      type: 'category',
+      label: 'DevOps & Cloud Documentation',
+      items:[
+        {
+          type: 'doc',
+          label: 'Introduction',
+          id: 'devops-cloud-documentation/intro',
+        },
+        {
+          type: 'doc',
+          label: 'Overview',
+          id: 'devops-cloud-documentation/overview',
+        },
+        {
+          type: 'doc',
+          label: 'Setup',
+          id: 'devops-cloud-documentation/setup',
+        },
+        {
+          type: 'doc',
+          label: 'Step-by-Step Guide',
+          id: 'devops-cloud-documentation/step_by_step',
+        },
+        {
+          type: 'doc',
+          label: 'Troubleshooting',
+          id: 'devops-cloud-documentation/troubleshooting',
+        },
+        {
+          type: 'doc',
+          label: 'Summary',
+          id: 'devops-cloud-documentation/summary',
+        },
+        {
+          type: 'doc',
+          label: 'Reflection',
+          id: 'devops-cloud-documentation/reflection',
+        },
+      ]
     }
   ],
 };
