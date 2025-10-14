@@ -108,6 +108,22 @@ const sidebars = {
        },
       ]
     },
+    // {
+    //   type: 'category',
+    //   label: 'AI Documentation',
+    //   items:[
+    //     {
+    //   type: 'doc',
+    //   label: 'Introduction',
+    //   id: 'ai-documentation/intro',
+    //    },
+    //    {
+    //     type: 'doc',
+    //     label: 'Model Card',
+    //     id: 'ai-documentation/model_card',
+    //    }
+    //   ]
+    // },
     {
       
       type: 'category',
