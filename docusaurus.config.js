@@ -15,7 +15,7 @@ const config = {
   title: "Grace’s Technical Writing Portfolio",
   tagline:
     "My portfolio for the WriteTech Accelerator Program, showcasing projects from each module and final deliverables.",
-  favicon: "img/favicon.ico",
+  favicon: "img/favicon.svg",
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
   future: {
@@ -107,7 +107,7 @@ plugins: [
         title: "Gracy'Doc",
         logo: {
           alt: "My Site Logo",
-          src: "img/logo.svg"
+          src: "img/favicon.svg"
         },
         items: [
           {
