@@ -14,7 +14,7 @@ import * as OpenApiPlugin from "docusaurus-plugin-openapi-docs";
 const config = {
   title: "Grace’s Technical Writing Portfolio",
   tagline:
-    "My portfolio for the WriteTech Accelerator Program, showcasing projects from each module and final deliverables.Good work",
+    "My portfolio for the WriteTech Accelerator Program, showcasing projects from each module and final deliverables.",
   favicon: "img/favicon.ico",
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
