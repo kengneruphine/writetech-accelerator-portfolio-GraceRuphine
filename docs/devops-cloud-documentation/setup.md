@@ -1,4 +1,4 @@
-# Setup Instructions
+# Set up Instructions
 
 Before starting, make sure you have:
 
